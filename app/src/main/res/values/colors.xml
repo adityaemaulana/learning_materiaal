@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#587cf4</color>
+    <color name="colorTextPrimary">#000000</color>
+
+    <!-- Image Button state -->
+    <color name="state_pressed">#587cf4</color>
+    <color name="state_released">#E0E0E0</color>
+</resources>

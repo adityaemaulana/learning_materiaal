@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LearnMaterial</string>
+    <string name="desc_splash_background">Splash Background</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="type_your_email">Type your email</string>
+    <string name="password">Password</string>
+    <string name="type_your_password">Type your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register">Register</string>
+    <string name="or">or</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="please_create_an_account_using_the_correct_data">Please Create an account using the correct data</string>
+    <string name="type_your_name">Type your name</string>
+    <string name="name">Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">About</string>
+    <string name="edit">Edit</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="full_name">Full Name</string>
+    <string name="jurusan_if">IF</string>
+    <string name="jurusan_mbti">MBTI</string>
+    <string name="jurusan_dkv">DKV</string>
+    <string name="jurusan_te">TE</string>
+    <string name="jurusan_tf">TF</string>
+    <string name="jurusan_si">SI</string>
+    <string name="jurusan_tk">TK</string>
+    <string name="jurusan_di">DI</string>
+</resources>
