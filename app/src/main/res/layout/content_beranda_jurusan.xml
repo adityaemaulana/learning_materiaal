@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:text="@string/jurusan"
         android:textColor="@android:color/black"
-        android:textSize="14sp" />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"

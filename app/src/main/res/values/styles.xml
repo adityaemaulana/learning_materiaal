@@ -7,6 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textViewStyle">@style/PoppinsTextStyle</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
     </style>
 
     <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -19,9 +22,38 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <!-- DetailView Toolbar title style -->
-    <style name="Toolbar.TitleText" parent="TextAppearance.AppCompat.Title">
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <!-- Title Text Style -->
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat">
         <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Font family for text -->
+    <style name="PoppinsTextStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>    
+
+    <!-- Toolbar title style -->
+    <style name="TitleTextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- EditText style -->
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/controlNormal</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <!-- TextInputLayout style -->
+    <style name="TextLabelAppearance">
+        <item name="android:textColorHint">#898989</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
 </resources>

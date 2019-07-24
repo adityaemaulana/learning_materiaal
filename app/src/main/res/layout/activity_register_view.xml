@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,99 +15,96 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
+        android:fontFamily="@font/poppins_light"
         android:text="@string/create_an_account"
         android:textColor="@android:color/black"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <View
         android:layout_width="45dp"
-        android:layout_height="1dp"
+        android:layout_height="2dp"
         android:layout_marginBottom="24dp"
         android:background="@color/colorAccent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/please_create_an_account_using_the_correct_data"
+        android:layout_marginBottom="8dp"
+        android:text="@string/register_hint1"
         android:textColor="#898989"
-        android:textSize="14sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:text="@string/name"
+        android:layout_marginBottom="40dp"
+        android:text="@string/register_hint2"
         android:textColor="#898989"
-        android:textSize="14sp" />
+        android:textSize="16sp" />
 
-    <EditText
-        android:id="@+id/et_register_name"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#e5e5e5"
-        android:hint="@string/type_your_name"
-        android:inputType="textEmailAddress"
-        android:textSize="14sp" />
+        android:layout_marginStart="-4dp"
+        android:layout_marginBottom="16dp"
+        app:hintTextAppearance="@style/TextLabelAppearance">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:text="@string/email"
-        android:textColor="#898989"
-        android:textSize="14sp" />
+        <EditText
+            android:id="@+id/et_register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textSize="14sp"
+            android:theme="@style/EditTextTheme" />
 
-    <EditText
-        android:id="@+id/et_register_email"
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#e5e5e5"
-        android:hint="@string/type_your_email"
-        android:inputType="textEmailAddress"
-        android:textSize="14sp" />
+        android:layout_marginStart="-4dp"
+        android:layout_marginBottom="16dp"
+        app:hintTextAppearance="@style/TextLabelAppearance">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:text="@string/password"
-        android:textColor="#898989"
-        android:textSize="14sp" />
+        <EditText
+            android:id="@+id/et_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textSize="14sp"
+            android:theme="@style/EditTextTheme" />
 
-    <EditText
-        android:id="@+id/et_register_password"
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="14dp"
-        android:backgroundTint="#e5e5e5"
-        android:hint="@string/type_your_password"
-        android:inputType="textPassword"
-        android:textCursorDrawable="@null"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/tv_forgot2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginStart="-4dp"
         android:layout_marginBottom="45dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:text="@string/forgot_password"
-        android:textColor="@color/colorAccent"
-        android:textSize="12sp" />
+        app:hintTextAppearance="@style/TextLabelAppearance">
+
+        <EditText
+            android:id="@+id/et_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textSize="14sp"
+            android:theme="@style/EditTextTheme" />
+
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/btn_register2"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/transparent_border"
+        android:background="@color/colorAccent"
         android:text="@string/register"
         android:textAllCaps="false"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:textSize="16sp" />
 
     <LinearLayout
@@ -140,12 +138,13 @@
 
     <Button
         android:id="@+id/btn_login2"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@drawable/transparent_border"
         android:text="@string/sign_in"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         android:textSize="16sp" />
 
 </LinearLayout>

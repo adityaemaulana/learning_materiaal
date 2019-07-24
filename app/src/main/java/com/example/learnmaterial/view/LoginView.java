@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.learnmaterial.R;
 
@@ -19,6 +20,8 @@ public class LoginView extends AppCompatActivity implements View.OnClickListener
         Button btnRegis = findViewById(R.id.btn_register);
         btnLogin.setOnClickListener(this);
         btnRegis.setOnClickListener(this);
+
+        initEditText();
     }
 
     @Override
@@ -30,5 +33,10 @@ public class LoginView extends AppCompatActivity implements View.OnClickListener
             Intent intent = new Intent(LoginView.this, RegisterView.class);
             startActivity(intent);
         }
+    }
+
+    public void initEditText() {
+        final EditText etEmail = findViewById(R.id.et_login_email);
+        final EditText etPassword = findViewById(R.id.et_login_password);
     }
 }

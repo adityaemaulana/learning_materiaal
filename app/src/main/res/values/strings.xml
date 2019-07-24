@@ -3,15 +3,15 @@
     <string name="desc_splash_background">Splash Background</string>
     <string name="sign_in">Sign in</string>
     <string name="email">Email</string>
-    <string name="type_your_email">Type your email</string>
     <string name="password">Password</string>
-    <string name="type_your_password">Type your password</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="register">Register</string>
     <string name="or">or</string>
     <string name="create_an_account">Create an account</string>
-    <string name="please_create_an_account_using_the_correct_data">Please Create an account using the correct data</string>
-    <string name="type_your_name">Type your name</string>
+    <string name="register_hint1">Please Create an account using the correct</string>
+    <string name="signin_hint1">Please Sign in using the registered email</string>
+    <string name="signin_hint2">and password</string>
+    <string name="register_hint2">data</string>
     <string name="name">Name</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -28,4 +28,9 @@
     <string name="jurusan_si">SI</string>
     <string name="jurusan_tk">TK</string>
     <string name="jurusan_di">DI</string>
+
+    <string name="title_beranda">Beranda</string>
+    <string name="title_profil">Profil</string>
+    <string name="slide_terkait">Slide Terkait</string>
+
 </resources>

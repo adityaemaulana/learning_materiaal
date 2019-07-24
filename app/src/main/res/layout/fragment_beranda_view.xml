@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.BerandaView"
-    android:background="#F3F7FA">
+    android:background="#F3F7FA"
+    tools:context=".view.BerandaView">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,15 +13,20 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:layout_height="170dp"
+            android:background="#F3F7FA">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/colorPrimary" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:layout_margin="@dimen/activity_vertical_margin"
-                android:src="@drawable/learningquote"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:src="@drawable/learningquote" />
 
         </FrameLayout>
 
@@ -30,17 +35,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:background="@color/colorPrimary"
-            android:layout_marginTop="@dimen/activity_vertical_margin">
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/activity_vertical_margin"
-                android:text="Slide Terkait"
-                android:textSize="14sp"
-                android:textColor="@android:color/black" />
+                android:text="@string/slide_terkait"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_beranda_slide"

@@ -18,55 +18,69 @@
         android:layout_height="?actionBarSize"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/colorPrimary"
+        android:paddingTop="0dp"
         app:buttonGravity="bottom|top"
         app:fabAlignmentMode="center"
         app:hideOnScroll="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="3">
 
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/btn_container_main_beranda"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-                <ImageButton
+                <View
+                    android:id="@+id/btn_header_main_beranda"
+                    android:layout_width="30dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorAccent" />
+
+                <ImageView
                     android:id="@+id/btn_main_beranda"
                     android:layout_width="27dp"
                     android:layout_height="27dp"
-                    android:layout_gravity="center"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:scaleType="fitXY" />
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_beranda" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center" />
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/btn_container_main_profile"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-                <ImageButton
+                <View
+                    android:id="@+id/btn_header_main_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorAccent" />
+
+                <ImageView
                     android:id="@+id/btn_main_profile"
                     android:layout_width="27dp"
                     android:layout_height="27dp"
+                    android:layout_centerInParent="true"
                     android:layout_gravity="center"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:scaleType="fitXY" />
+                    android:src="@drawable/ic_profile" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
         </LinearLayout>
     </android.support.design.bottomappbar.BottomAppBar>
