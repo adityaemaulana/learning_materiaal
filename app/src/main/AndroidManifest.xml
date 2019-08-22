@@ -10,15 +10,35 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.MainView"></activity>
+            android:name=".view.DaftarDiskusiView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.DaftarMateriView"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme" />
+        <activity
+            android:name=".view.DaftarModulView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.DaftarPelajaranView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.TambahSlideView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.MainView"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".view.RegisterView"
+            android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme" />
         <activity
             android:name=".view.LoginView"
+            android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme" />
         <activity
             android:name=".view.SplashView"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,5 +51,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

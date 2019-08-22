@@ -1,5 +1,6 @@
 package com.example.learnmaterial.view;
 
+import android.content.Intent;
 import android.support.design.bottomappbar.BottomAppBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -34,8 +35,8 @@ public class MainView extends AppCompatActivity implements View.OnClickListener 
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainView.this, "Clicked", Toast.LENGTH_SHORT)
-                        .show();
+                Intent intent = new Intent(MainView.this, TambahSlideView.class);
+                startActivity(intent);
             }
         });
 

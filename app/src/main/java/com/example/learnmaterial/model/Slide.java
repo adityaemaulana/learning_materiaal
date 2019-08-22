@@ -1,16 +1,21 @@
 package com.example.learnmaterial.model;
 
 public class Slide {
+    private String id;
     private String mataKuliah;
     private String judul;
     private String jurusan;
-    private String image;
+    private String url;
 
-    public Slide(String mataKuliah, String judul, String jurusan, String image) {
-        this.mataKuliah = mataKuliah;
-        this.judul = judul;
-        this.jurusan = jurusan;
-        this.image = image;
+    public Slide() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getMataKuliah() {
@@ -37,11 +42,11 @@ public class Slide {
         this.jurusan = jurusan;
     }
 
-    public String getImage() {
-        return image;
+    public String getUrl() {
+        return url;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setUrl(String urlSlide) {
+        this.url = urlSlide;
     }
 }

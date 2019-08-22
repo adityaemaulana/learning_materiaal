@@ -6,56 +6,68 @@
     android:background="#F3F7FA"
     tools:context=".view.BerandaView">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:background="#F3F7FA">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:background="@color/colorPrimary" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:layout_margin="@dimen/activity_vertical_margin"
-                android:scaleType="fitXY"
-                android:src="@drawable/learningquote" />
-
-        </FrameLayout>
-
-        <include layout="@layout/content_beranda_jurusan" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:background="@color/colorPrimary"
-            android:descendantFocusability="blocksDescendants"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/activity_vertical_margin"
-                android:text="@string/slide_terkait"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_beranda_slide"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="170dp"
+                android:background="#F3F7FA">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@color/colorPrimary" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learningquote" />
+
+            </FrameLayout>
+
+            <include layout="@layout/content_beranda_jurusan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/colorPrimary"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="@string/slide_terkait"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_beranda_slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+        <WebView
+            android:id="@+id/wv_materi_beranda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </FrameLayout>
 
 </android.support.v4.widget.NestedScrollView>

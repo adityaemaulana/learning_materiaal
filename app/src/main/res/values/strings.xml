@@ -33,4 +33,7 @@
     <string name="title_profil">Profil</string>
     <string name="slide_terkait">Slide Terkait</string>
 
+    <string name="syarat_dan_ketentuan">&#8226; Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore.\n\n&#8226; Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore.\n\n&#8226; Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore.\n
+    </string>
+
 </resources>
